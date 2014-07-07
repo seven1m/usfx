@@ -27,7 +27,7 @@ module USFX
         start_verse(attributes)
       when 've'
         end_verse
-      when 'f'
+      when 'f', 'x'
         start_footnote(attributes)
       end
     end
@@ -37,7 +37,7 @@ module USFX
       case name
       when 'h'
         end_book_title
-      when 'f'
+      when 'f', 'x'
         end_footnote
       end
     end
